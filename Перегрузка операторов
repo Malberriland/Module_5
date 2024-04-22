@@ -1,0 +1,17 @@
+class Buiding:
+
+    def __init__(self, number):
+        self.numberOfFloors = int()
+        self.buildingType = str()
+
+    def __eq__(self, title):
+        return self.numberOfFloors == self.buildingType
+
+
+variable_1 = Buiding(20)
+variable_2 = Buiding('многоэтажка')
+
+if variable_1 == variable_2:
+    print("Значения равны")
+if variable_1 != variable_2:
+    print("Значения неравны")
