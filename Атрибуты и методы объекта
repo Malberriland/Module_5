@@ -1,0 +1,11 @@
+class House:
+
+    def __init__(self, number):
+        self.numberOfFloors = number
+
+
+house = House(10)
+house.numberOfFloors = 10
+while house.numberOfFloors <= 10:
+    print("Текущий этаж равен", house.numberOfFloors)
+    house.numberOfFloors += 1
