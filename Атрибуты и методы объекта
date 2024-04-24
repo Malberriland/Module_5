@@ -6,6 +6,6 @@ class House:
 
 house = House(10)
 house.numberOfFloors = 10
-while house.numberOfFloors <= 10:
+while house.numberOfFloors == 10:
     print("Текущий этаж равен", house.numberOfFloors)
     house.numberOfFloors += 1
