@@ -1,4 +1,4 @@
-class Buiding:
+class Building:
 
     def __init__(self, numberOfFloors, buildingType):
         self.numberOfFloors = numberOfFloors
@@ -8,7 +8,7 @@ class Buiding:
         return self.numberOfFloors == self.buildingType
 
 
-b = Buiding(20, 'многоэтажка')
+b = Building(20, 'многоэтажка')
 
 if b.numberOfFloors == b.buildingType:
     print("Значения равны")
