@@ -5,12 +5,18 @@ class Building:
         self.buildingType = buildingType
 
     def __eq__(self, other):
-        return self.numberOfFloors == self.buildingType
+        return self.numberOfFloors == other.numberOfFloors and self.buildingType == other.buildingType
 
 
-b = Building(20, 'многоэтажка')
+b1 = Building(20, 'многоэтажка')
+b2 = Building(30, 'многоэтажка')
 
-if b.numberOfFloors == b.buildingType:
+if b1.numberOfFloors == b2.numberOfFloors:
     print("Значения равны")
-if b.numberOfFloors != b.buildingType:
+if b1.numberOfFloors != b2.numberOfFloors:
     print("Значения неравны")
+if b1.buildingType == b2.buildingType:
+    print("Значения равны")
+if b1.buildingType != b2.buildingType:
+    print("Значения неравны")
+
