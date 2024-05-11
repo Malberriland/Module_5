@@ -11,12 +11,7 @@ class Building:
 b1 = Building(20, 'многоэтажка')
 b2 = Building(30, 'многоэтажка')
 
-if b1.numberOfFloors == b2.numberOfFloors:
+if b1 == b2:
     print("Значения равны")
-if b1.numberOfFloors != b2.numberOfFloors:
+if b1 != b2:
     print("Значения неравны")
-if b1.buildingType == b2.buildingType:
-    print("Значения равны")
-if b1.buildingType != b2.buildingType:
-    print("Значения неравны")
-
