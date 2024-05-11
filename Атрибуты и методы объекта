@@ -4,7 +4,8 @@ class House:
         self.numberOfFloors = numberOfFloors
 
 
-house = House(1)
-while house.numberOfFloors <= 10:
-    print("Текущий этаж равен", house.numberOfFloors)
-    house.numberOfFloors += 1
+house = House(10)
+x = 1
+while x <= house.numberOfFloors:
+    print("Текущий этаж равен", x)
+    x += 1
