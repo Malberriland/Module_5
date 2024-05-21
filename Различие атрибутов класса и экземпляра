@@ -5,8 +5,9 @@ class Building:
         Building.total += 1
 
 
-b = Building()
-while b.total <= 40:
-    print(b.total)
-    b.total += 1
+Street = []
+while len(Street) < 40:
+    b = Building()
+    Street.append(b)
+    print(Building.total)
     
