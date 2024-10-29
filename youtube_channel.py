@@ -19,10 +19,10 @@ class User:
 
 
 class Video:
-    def __init__(self, title, duration, time_now=0, adult_mode=False):
+    def __init__(self, title, duration, adult_mode=False):
         self.title = title
         self.duration = duration
-        self.time_now = time_now
+        self.time_now = 0
         self.adult_mode = adult_mode
 
     def __eq__(self, other):
@@ -97,7 +97,7 @@ class UrTube:
 
 ur = UrTube()
 v1 = Video('Лучший язык программирования 2024 года', 200)
-v2 = Video('Для чего девушкам парень программист?', 10, 0, adult_mode=True)
+v2 = Video('Для чего девушкам парень программист?', 10, True)
 
 # Добавление видео
 ur.add(v1, v2)
